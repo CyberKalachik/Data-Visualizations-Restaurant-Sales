@@ -1,27 +1,142 @@
-# Data-Visualizations-Restaurant-Sales
-Based on CSV data set I created data visualization using Matplotlib and Seaborn
-# Restaurant-Sales-Query
-Sales data of a restaurant company from different cities (countries)
+# 🍽️ Restaurant Sales Analysis & Data Visualization
 
-Using “Restaurant Sales Data” taken from https://www.kaggle.com/datasets/rohitgrewal/restaurant-sales-data I wrote queries in SQL Server.
-It is a sales data of a restaurant company operating in multiple cities in the world. It contains information about individual sales transactions, customer demographics, and product details. The data is structured in a tabular format, with each row representing a single record and each column representing a specific attribute. This dataset can be commonly used for business intelligence, sales forecasting, and customer behaviour analysis.
+## Project Overview
 
-These are the main Features/Columns available in the dataset:
+This project explores transactional sales data from a restaurant company operating across multiple cities worldwide.  
+The analysis focuses on understanding sales patterns, product performance, and regional differences using SQL-style data exploration and Python visualizations.
 
-1) Order ID: A unique identifier for each sales order. This can be used to track individual transactions.
+The goal is to demonstrate fundamental data analysis skills, including data aggregation, exploratory analysis, and visualization.
 
-2) Order Date: The date when the order was placed. This column is essential for time-series analysis, such as identifying sales trends over time or seasonality.
+________________________________________
 
-3) Product: The name or type of the product sold. This column is crucial for analyzing sales performance by product category.
+## Dataset
 
-4) Price : The unit price of the product. This, along with 'Quantity Ordered', is used to calculate the total price of each order.
+**Name:** Restaurant Sales Data  
+**Source:** https://www.kaggle.com/datasets/rohitgrewal/restaurant-sales-data  
 
-5) Quantity : The number of units of the product sold in a single order. This is a key metric for calculating revenue and understanding sales volume.
+The dataset contains individual sales transactions along with customer and operational attributes.  
+Each row represents a single order.
 
-6) Purchase Type : The order was made online or in-store or drive-thru.
+________________________________________
 
-7) Payment Method : How the payment for the order was done.
+## Key Features
 
-8) Manager : Name of the manager of the store.
+- **Order ID** — Unique identifier for each transaction  
+- **Order Date** — Date of purchase (enables time-series analysis)  
+- **Product** — Product name or category  
+- **Price** — Unit price of the item  
+- **Quantity** — Number of units purchased  
+- **Purchase Type** — Online, in-store, or drive-thru  
+- **Payment Method** — Method of payment  
+- **Manager** — Store manager name  
+- **City** — Location of the store  
 
-9) City : The location of the store. This can be used for geographical analysis of sales, such as identifying top-performing regions or optimizing logistics.
+________________________________________
+
+## Objectives
+
+- Analyze sales performance by product
+- Compare sales across cities
+- Explore distribution of order quantities
+- Identify relationships between numerical variables
+- Demonstrate data visualization techniques in Python
+
+________________________________________
+
+## Data Processing
+
+- Loaded CSV data using Pandas
+- Performed grouping and aggregation
+- Selected relevant variables for analysis
+- Calculated summary statistics
+- Prepared data for visualization
+
+________________________________________
+
+## Visualizations
+
+The project includes multiple chart types created with Matplotlib and Seaborn:
+
+### Product Analysis
+- Total quantity sold by product (bar chart)
+- Average sales by product
+
+### Geographic Analysis
+- Total sales by city (bar chart)
+
+### Distribution Analysis
+- Histogram of order quantities
+
+### Relationship Analysis
+- Scatter plot of price vs product
+- Correlation heatmap for numeric features
+
+________________________________________
+
+## Tools & Technologies
+
+- Python
+- Pandas
+- Matplotlib
+- Seaborn
+
+________________________________________
+
+## Use Cases
+
+This type of analysis can support:
+
+- Business intelligence reporting  
+- Product performance evaluation  
+- Regional strategy decisions  
+- Inventory planning  
+- Pricing analysis  
+
+________________________________________
+
+## Future Improvements
+
+- Time-series analysis of sales trends
+- Customer segmentation
+- Revenue forecasting
+- Interactive dashboards (Power BI / Tableau)
+- SQL-based analytical queries
+
+________________________________________
+
+## Repository Contents
+
+- `Restaurant.csv` — raw dataset  
+- Python scripts / notebook — data analysis and visualizations  
+
+________________________________________
+
+## Key dashboards
+
+Average Sales by Product
+
+![AverageSalesProduct](Screenshots/AverageSalesProduct.jpg)
+
+Correletion HeatMap
+
+![CorreletionHeatMap](Screenshots/CorreletionHeatMap.jpg)
+
+Product VS Price
+
+![ProductVSPrice](Screenshots/ProductVSPrice.jpg)
+
+Sales Distribution
+
+![SalesDistribution](Screenshots/SalesDistribution.jpg)
+
+Sales Over Product
+
+![SalesOverProduct](Screenshots/SalesOverProduct.jpg)
+
+Total Sales by City
+
+![TotalSalesCity](Screenshots/TotalSalesCity.jpg)
+
+Total Sales by Product
+
+![TotalSalesProduct](Screenshots/TotalSalesProduct.jpg)
