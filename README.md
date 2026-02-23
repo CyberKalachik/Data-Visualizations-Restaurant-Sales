@@ -119,7 +119,7 @@ Average Sales by Product
 
 Correletion HeatMap
 
-![CorreletionHeatMap](Screenshots/CorreletionHeatMap.jpg)
+![Correlation Heatmap](Screenshots/CorrelationHeatMap.jpg)
 
 Product VS Price
 
